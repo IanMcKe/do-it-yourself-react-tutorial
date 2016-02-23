@@ -19898,8 +19898,7 @@
 	        _react2.default.createElement(
 	          "h4",
 	          { className: "commentAuthor" },
-	          this.props.author,
-	          ":"
+	          this.props.author
 	        ),
 	        this.props.children
 	      );

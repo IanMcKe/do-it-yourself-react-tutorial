@@ -1,4 +1,4 @@
 /node_modules
-/build
-/build/public
+/build/public/*.js
+/build/public/*.html
 /dist
