@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
 import Home from './home/home.js';
 import CommentBox from './CommentBox/CommentBox.js';
 
-var commentData = [
-  {id: 1, author: "Pete Hunt", text: "This is one comment"},
-  {id: 2, author: "Jordan Walke", text: "This is *another* comment"}
-];
 
-
-ReactDOM.render(<Home />, document.getElementById('home'));
-ReactDOM.render(<CommentBox data={commentData} />, document.getElementById('comment-box'));
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" component={Home}/>
+    <Route path="/comments" component={CommentBox}/>
+  </Router>
+), document.getElementById('app'))
