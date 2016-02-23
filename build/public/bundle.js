@@ -19837,9 +19837,9 @@
 	    key: 'render',
 	    value: function render() {
 	      var commentNodes = this.props.data.map(function (comment) {
-	        _react2.default.createElement(
+	        return _react2.default.createElement(
 	          _Comment2.default,
-	          { author: '{comment.author}', key: '{comment.id}' },
+	          { author: comment.author, key: comment.id },
 	          comment.text
 	        );
 	      });
