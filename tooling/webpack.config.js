@@ -28,6 +28,7 @@ module.exports = {
       extensions: ['.js', '.jsx']
     }
   },
+  amd: { jQuery: true },
 
   //  Configure the plugins. We copy the index.html
   //  file to the build folder.
